@@ -9,8 +9,6 @@
 <script setup>
 import Filter from './Filter.vue'
 import ProductList from './ProductList.vue'
-
-
 </script>
 
 <style scoped>
