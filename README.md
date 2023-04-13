@@ -11,7 +11,7 @@
 Что нужно доделать:
 *Адаптивный дизайн (есть зачатки)
 
-Чтобы запустить проект введите в консоли 'npm run dev'
+Чтобы запустить проект введите в консоли 'npm i' затем 'npm run dev'
 
 Hi. This is a test task for one of IT companies. 
 Tech stack: 
@@ -26,4 +26,4 @@ What was done:
 What remains:
 *Adaptive design is 50% ready (Lack of time)
 
-To start demo type 'npm run dev' in the console
+To start demo type 'npm i' then 'npm run dev' in the console
