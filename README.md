@@ -1,7 +1,29 @@
-# Vue 3 + Vite
+Привет! Это тестовое задание для одной компании.
+Стек:
+*Vue 3 (composition API)
+*Pinia
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Что готово:
+*Верстка по шаблону из фигмы
+*Вся логика сайта (фильтрация, сортировка, взаимодействие с элементами корзины, слайдер и тд)
+*Дизайн готов для десктопа в ввиду высокой занятости на основной работе
 
-## Recommended IDE Setup
+Что нужно доделать:
+*Адаптивный дизайн (есть зачатки)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Чтобы запустить проект введите в консоли 'npm run dev'
+
+Hi. This is a test task for one of IT companies. 
+Tech stack: 
+*Vue 3 (composition API)
+*Pinia
+
+What was done: 
+*Site stylization according to Figma
+*All filtering/sorting/cart logic
+*Desktop version fully operational
+
+What remains:
+*Adaptive design is 50% ready (Lack of time)
+
+To start demo type 'npm run dev' in the console
