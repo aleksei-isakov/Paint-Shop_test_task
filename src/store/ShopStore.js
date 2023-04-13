@@ -7,10 +7,18 @@ export const useShopStore = defineStore('ShopStore', () => {
     const productData = ref([])
     const filteredData = ref([])
     const button = ref(null)
+    const isMobile = ref(false)
+    const isFilterOpened = ref(false)
 
     const totalPrice = computed(() => {
         return cart.value.reduce((acc, item) => {
             return acc + Math.trunc(item.quantity * item.price)
+        },0)
+    })
+
+    const totalCartCount = computed(() => {
+        return cart.value.reduce((acc, item) => {
+            return acc + item.quantity
         },0)
     })
 
@@ -82,6 +90,9 @@ export const useShopStore = defineStore('ShopStore', () => {
         foundProductsCount,
         onClickCartCountPlus,
         onClickCartCountMinus,
-        totalPrice
+        totalPrice,
+        isMobile,
+        isFilterOpened,
+        totalCartCount
     }
 })

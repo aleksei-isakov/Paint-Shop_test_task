@@ -12,7 +12,7 @@
       <strong>{{itemPrice}} ₽</strong>
       <button
           v-show="item.quantity === 0"
-          class="add-to-cart-button"
+          :class="['add-to-cart-button']"
           @click="store.onClickAddToCart(item)"
       >
         <span class="add-symbol">+</span>
@@ -51,7 +51,7 @@
 </template>
 
 <script setup>
-import { computed, ref, onMounted } from 'vue'
+import { computed, onMounted } from 'vue'
 import { useShopStore } from "../store/ShopStore";
 
 const store = useShopStore()
@@ -137,8 +137,6 @@ onMounted(()=> {
   padding: 0;
   background-color: #7BB899;
   border-radius: 5px;
-  outline: none;
-  border: none;
   cursor: pointer;
 }
 
@@ -155,8 +153,6 @@ onMounted(()=> {
   height: 32px;
   width: 80px;
   background-color: #7BB899;
-  outline: none;
-  border: none;
   cursor: pointer;
 }
 
@@ -177,4 +173,18 @@ onMounted(()=> {
     transform: scaleX(1);
   }
 }
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+  .product-list_item {
+    height: 300px;
+    width: 200px;
+  }
+}
+
+
+
+
+
 </style>

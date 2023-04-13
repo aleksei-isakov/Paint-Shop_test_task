@@ -1,6 +1,6 @@
 <template>
   <div class="collection-wrapper">
-    <div class="product-slider"> </div>
+  <ProductSlider/>
   <Filter/>
   <ProductList/>
   </div>
@@ -9,6 +9,8 @@
 <script setup>
 import Filter from './Filter.vue'
 import ProductList from './ProductList.vue'
+import ProductSlider from './ProductSlider.vue'
+
 </script>
 
 <style scoped>
@@ -22,10 +24,16 @@ import ProductList from './ProductList.vue'
   margin-bottom: 150px;
 }
 
-.product-slider {
-  height: 560px;
-  grid-area: product-slider;
-  background-color: green;
+@media (min-width: 320px) and (max-width: 768px) {
+  .collection-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 320px;
+    max-width: 768px;
+    width: auto;
+  }
 }
-
 </style>

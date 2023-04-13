@@ -68,6 +68,12 @@ const store = useShopStore()
   left: 22px;
   background: #000000;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .product-filter {
+    display: none;
+  }
+}
 </style>
 
 
